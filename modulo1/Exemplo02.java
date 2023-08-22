@@ -7,5 +7,6 @@ public class Exemplo02 {
     InputStream is = new FileInputStream(args[0]);
     int b = is.read();
     System.out.println(b);
+    is.close();
   }
 }
