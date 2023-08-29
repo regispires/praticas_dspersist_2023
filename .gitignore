@@ -26,3 +26,5 @@ bin/
 target/
 
 .vscode/
+
+*.txt
