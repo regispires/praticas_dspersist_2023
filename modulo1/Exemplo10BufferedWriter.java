@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
-public class Exemplo10 {
+public class Exemplo10BufferedWriter {
 
   public static void main(String[] args) throws IOException {
     OutputStream os = new FileOutputStream("saida.txt");

@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Exemplo04 {
+public class Exemplo04ReadBytesEncodedAndShowHexaAndChar {
   public static void main(String[] args) throws IOException {
     InputStream is = new FileInputStream(args[0]);
     //InputStreamReader isr = new InputStreamReader(is);

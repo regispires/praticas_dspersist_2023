@@ -1,7 +1,4 @@
-import java.io.IOException;
-import java.util.Properties;
-
-public class Exemplo15 {
+public class Exemplo15SplitString {
   public static void main(String[] args) {
     String delimitador = ",";
     String s = "1,João,Rua J 10,88999346556";

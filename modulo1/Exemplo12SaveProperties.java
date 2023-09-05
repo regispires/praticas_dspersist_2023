@@ -1,7 +1,7 @@
 import java.io.FileOutputStream;
 import java.util.Properties;
 
-public class Exemplo12 {
+public class Exemplo12SaveProperties {
   public static void main(String[] args) throws Exception {
     Properties prop = new Properties();
 
