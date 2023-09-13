@@ -3,7 +3,7 @@ package serializacao;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
-public class Deserializa {
+public class Desserializa {
 
    public static void main(String [] args) {
       Empregado e = null;
