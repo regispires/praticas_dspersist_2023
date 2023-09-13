@@ -28,3 +28,5 @@ target/
 .vscode/
 
 *.txt
+*.ser
+pessoas.xml
