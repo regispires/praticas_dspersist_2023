@@ -1,4 +1,4 @@
-package serializaxml;
+package br.ufc.quixada.dspersist.modulo1;
 
 public class Pessoa {
     private int id;
@@ -29,7 +29,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa [id=" + id + ", nome=" + nome + "]";
+        return "Pessoa [id=" + id + ", name=" + nome + "]";
     }
 
     

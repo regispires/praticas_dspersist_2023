@@ -1,4 +1,4 @@
-package serializaxml;
+package br.ufc.quixada.dspersist.modulo1;
 
 import java.util.List;
 
