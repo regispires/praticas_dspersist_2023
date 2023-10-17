@@ -30,3 +30,8 @@ target/
 *.txt
 *.ser
 pessoas.xml
+.idea
+*.iml
+.gradle
+build/
+
