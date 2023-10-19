@@ -13,13 +13,14 @@ public class Config {
     
     public static Properties getConfig() {
         try {
+            log.info("Carregando configurações...");
             props.load(Config.class.getResourceAsStream("/config.properties"));
             log.info("Configurações carregadas com sucesso!");
             log.info("propriedades: {}", props.stringPropertyNames());
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            log.error(e.getMessage(), e);
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error(e.getMessage(), e);
         }
         return props;
     }

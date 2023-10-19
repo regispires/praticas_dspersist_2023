@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 import br.ufc.quixada.entity.Cliente;
 
 @Repository
-//@Primary
+// @Primary
 public class ClienteJDBCDAO implements ClienteDAO {
 
 	@Autowired
