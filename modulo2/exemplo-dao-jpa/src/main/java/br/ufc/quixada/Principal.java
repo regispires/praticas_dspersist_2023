@@ -15,7 +15,15 @@ public class Principal {
 
 	public static void main(String[] args) {
 		ClienteDAO baseClientes = new ClienteJPADAO();
-		String menu = "Escolha uma opção:\n1 - Inserir\n2 - Atualizar por CPF\n3 - Remover por CPF\n4 - Exibir por CPF\n5 - Exibir por id\n6 - Exibir todos\n7 - Exibir todos que contem determinado nome\n8 - Sair";
+		StringBuilder menu = new StringBuilder("Escolha uma opção:\n")
+			.append("1 - Inserir\n")
+			.append("2 - Atualizar por CPF\n")
+			.append("3 - Remover por CPF\n")
+			.append("4 - Exibir por CPF\n")
+			.append("5 - Exibir por id\n")
+			.append("6 - Exibir todos\n")
+			.append("7 - Exibir todos que contem determinado nome\n")
+			.append("8 - Sair");
 		char opcao = '0';
 		do {
 			try {

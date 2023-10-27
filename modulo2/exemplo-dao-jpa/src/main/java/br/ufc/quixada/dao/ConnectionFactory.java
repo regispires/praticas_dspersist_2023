@@ -6,8 +6,6 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import org.hibernate.hikaricp.internal.HikariConfigurationUtil;
-
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
