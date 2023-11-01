@@ -13,7 +13,8 @@ public class ListaProdutos implements CommandLineRunner {
     @Autowired
     private ProdutoDAO produtoDAO;
 
-    public void run(String[] args) {
+    @Override
+    public void run(String... args) {
         List<Produto> produtos = produtoDAO.findAll();
         for (Produto prod : produtos) {
             System.out.println(prod);

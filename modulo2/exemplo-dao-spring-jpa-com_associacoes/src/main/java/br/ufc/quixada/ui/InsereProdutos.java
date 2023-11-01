@@ -11,7 +11,8 @@ public class InsereProdutos implements CommandLineRunner {
     @Autowired
     private ProdutoDAO produtoDAO;
 
-    public void run(String[] args) {
+    @Override
+    public void run(String... args) {
         Produto p = new Produto(null, "ovo", 1);
         produtoDAO.save(p);
 

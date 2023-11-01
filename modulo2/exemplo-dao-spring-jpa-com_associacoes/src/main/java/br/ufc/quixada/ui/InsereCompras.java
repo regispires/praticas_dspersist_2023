@@ -1,7 +1,6 @@
 package br.ufc.quixada.ui;
 
 import br.ufc.quixada.dao.CompraDAO;
-import br.ufc.quixada.dao.ProdutoDAO;
 import br.ufc.quixada.entity.Cliente;
 import br.ufc.quixada.entity.Compra;
 import br.ufc.quixada.entity.ItemCompra;
@@ -19,7 +18,8 @@ public class InsereCompras implements CommandLineRunner {
     @Autowired
     private CompraDAO compraDAO;
 
-    public void run(String[] args) {
+    @Override
+    public void run(String... args) {
         Compra compra = new Compra();
         compra.setDataHora(LocalDateTime.now());
         Cliente cliente = new Cliente();
