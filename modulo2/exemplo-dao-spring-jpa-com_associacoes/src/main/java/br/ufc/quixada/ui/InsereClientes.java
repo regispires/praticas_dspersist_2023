@@ -13,14 +13,13 @@ public class InsereClientes implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Cliente cliente = new Cliente(null, "João", "1111", "1111", 1111.11, null);
+        Cliente cliente = new Cliente(null, "1111", "João", "1111", 1111.11, null);
         clienteDAO.save(cliente);
 
-        cliente = new Cliente(null, "Maria", "2222", "2222", 2222.22, null);
+        cliente = new Cliente(null, "2222", "Maria", "2222", 2222.22, null);
         clienteDAO.save(cliente);
 
-        cliente = new Cliente(null, "José", "3333", "3333", 3333.33, null);
+        cliente = new Cliente(null, "3333", "José", "3333", 3333.33, null);
         clienteDAO.save(cliente);
-        
     }
 }
