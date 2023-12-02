@@ -1,5 +1,5 @@
 exemplo-dao-spring-jpa-mongo-com_associacoes-ui-completa
-=============================++++++=====================
+========================================================
 
 Exemplo de aplicação usando JPA e Mongo com Spring Boot, Spring Data JPA e Spring Data MongoDB.
 
