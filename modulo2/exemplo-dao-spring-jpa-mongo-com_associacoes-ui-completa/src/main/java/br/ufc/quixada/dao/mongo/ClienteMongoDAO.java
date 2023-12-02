@@ -17,14 +17,14 @@ public interface ClienteMongoDAO extends ClienteDAO, MongoRepository<Cliente, St
 	public Cliente findFirstByCpf(String cpf);
 
 	//@Query("select c from Cliente c where c.cpf = :cpf")
-	@Query(value = "{cpf: ?0}")
+	@Query(value = "{cpf: :#{#cpf}}")
 	public Cliente buscaPrimeiroPorCpf(String cpf);
 
 	// Os métodos findByNomeStartingWith e buscaPorNomeIniciadoPor fazem exatamente a mesma coisa
 	public List<Cliente> findByNomeStartingWithIgnoreCase(String str);
 
 	//@Query("select c from Cliente c where c.nome ilike %:nome%")
-	@Query(value = "{nome: {$regex: ?0, $options: 'i'} }")
+	@Query(value = "{nome: {$regex: :#{#nome}, $options: 'i'} }")
 	public List<Cliente> buscaPorNomeContendoString(String nome);
 
 	@Query(value = "{}", count = true)
